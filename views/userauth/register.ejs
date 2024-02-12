@@ -1,0 +1,54 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="container d-flex justify-content-center mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3"><!--class="col-md-6 offset-md-3"-->
+            <div class="card shadow">
+                <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1478827536114-da961b7f86d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="card-img-top" >
+                <div class="card-body"> 
+                    <h5 class="card-title">Register</h5>
+                    <form action="/register" method="post" class="validated-form" novalidate>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">username:</label>
+                            <input class="form-control" type="text" name="username" id="username" required>
+                            <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input class="form-control" type="email" name="email" id="email" required>
+                            <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">password:</label>
+                            <input class="form-control" type="password" name="password" id="password" required>
+                            <div class="valid-feedback"> Looks good! </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                        <button class="btn btn-success">Register</button>
+                    </div> 
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<h1>Register</h1>
+<form action="/register" method="post" class="validated-form" novalidate>
+    <div class="mb-3">
+        <label for="username" class="form-label">username:</label>
+        <input class="form-control" type="text" name="username" id="username" required>
+        <div class="valid-feedback"> Looks good! </div>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail:</label>
+        <input class="form-control" type="email" name="email" id="email" required>
+        <div class="valid-feedback"> Looks good! </div>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">password:</label>
+        <input class="form-control" type="password" name="password" id="password" required>
+        <div class="valid-feedback"> Looks good! </div>
+    </div> 
+    <button class="btn btn-success">Register</button>
+</form>-->
